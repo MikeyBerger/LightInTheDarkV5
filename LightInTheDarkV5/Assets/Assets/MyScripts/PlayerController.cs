@@ -10,22 +10,23 @@ public class PlayerController : MonoBehaviour
     Vector2 LightMovement;
     public float PlayerSpeed;
     public float LightSpeed;
-    public float JumpForce;
+    public float DashForce;
     public float LadderSpeed;
-    public float DropTimer;
+    public float DashTimer;
     public float DropSpeed;
     public bool IsGrounded;
     public bool AirBorn;
-    private bool IsJumping;
-    private bool FacingRight = true;
+    public bool IsDashing;
+    public bool FacingRight = true;
     private Transform LightObject;
     private Rigidbody2D RB;
     private Animator Anim;
 
-    IEnumerator StopJump()
+    IEnumerator StopDash()
     {
-        yield return new WaitForSeconds(DropTimer);
-        IsJumping = false;
+        //transform.position = Vector3.zero;
+        yield return new WaitForSeconds(DashTimer);
+        IsDashing = false;
     }
 
 
@@ -41,13 +42,38 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RB.velocity = new Vector2(PlayerMovement.x, 0) * PlayerSpeed * Time.deltaTime;
+        RB.velocity = new Vector2(PlayerMovement.x, PlayerMovement.y) * PlayerSpeed * Time.deltaTime;
         LightObject.transform.Translate(new Vector2(LightMovement.x, LightMovement.y) * LightSpeed * Time.deltaTime);
+
+
+        if (IsDashing)
+        {
+            if (FacingRight)
+            {
+                RB.AddForce(Vector2.right * DashForce * Time.deltaTime);
+                RB.velocity = Vector2.zero;
+                //IsDashing = false;
+                StartCoroutine(StopDash());
+            }
+            else if (!FacingRight)
+            {
+                RB.AddForce(Vector2.left * DashForce * Time.deltaTime);
+                RB.velocity = Vector2.zero;
+                //IsDashing = false;
+                StartCoroutine(StopDash());
+            }
+
+        }
+
+        if (!IsDashing)
+        {
+            RB.velocity = new Vector2(PlayerMovement.x, PlayerMovement.y) * PlayerSpeed * Time.deltaTime;
+        }
 
         Flip();
         AnimatePlayer();
-        Jump();
-        Drop();
+        //Dash();
+        //Drop();
     }
 
     void Flip()
@@ -82,19 +108,27 @@ public class PlayerController : MonoBehaviour
             Anim.SetBool("Grounded", true);
         }
     }
-    void Jump()
+    void Dash()
     {
         //RB.AddForce(Vector2.up * JumpForce);
         //IsJumping = true;
 
-        if (IsJumping && IsGrounded)
+        if (IsDashing)
         {
-            transform.Translate(0, JumpForce * Time.deltaTime, 0);
-            //RB.AddForce(Vector2.up * JumpForce);
-            //StartCoroutine(StopJump());
-            IsJumping = false;
-        }
+            if (FacingRight)
+            {
+                RB.AddForce(Vector2.right * DashForce * Time.deltaTime);
+                RB.velocity = Vector2.zero;
+            }
+            else if (!FacingRight)
+            {
+                RB.AddForce(Vector2.left * DashForce * Time.deltaTime);
+                RB.velocity = Vector2.zero;
+            }
 
+        }
+        //IsDashing = false;
+        StartCoroutine(StopDash());
     }
 
     void Drop()
@@ -117,11 +151,11 @@ public class PlayerController : MonoBehaviour
         LightMovement = ctx.ReadValue<Vector2>();
     }
 
-    public void OnJump(InputAction.CallbackContext ctx)
+    public void OnDash(InputAction.CallbackContext ctx)
     {
         if (ctx.phase == InputActionPhase.Performed)
         {
-            IsJumping = true;
+            IsDashing = true;
         }
     }
     #endregion

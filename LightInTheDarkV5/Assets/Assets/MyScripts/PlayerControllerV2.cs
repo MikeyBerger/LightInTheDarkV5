@@ -35,8 +35,11 @@ public class PlayerControllerV2 : MonoBehaviour
     void Update()
     {
         //Direction = PlayerMovement;
-        RB.velocity = new Vector2(PlayerMovement.x, PlayerMovement.y) * PlayerSpeed * Time.deltaTime;
+        //RB.velocity = new Vector2(PlayerMovement.x * PlayerSpeed, PlayerMovement.y * PlayerSpeed) * Time.deltaTime;
+        //transform.Translate(new Vector3(PlayerMovement.x, PlayerMovement.y, 0) * PlayerSpeed * Time.deltaTime);
+        RB.MovePosition(RB.position + PlayerMovement * PlayerSpeed * Time.deltaTime);
         Light.transform.Translate(new Vector2(LightMovement.x, LightMovement.y) * LightSpeed * Time.deltaTime);
+
 
         Dash();
         Flip();
