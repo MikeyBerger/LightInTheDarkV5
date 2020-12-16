@@ -9,9 +9,10 @@ public class PlayerControllerV2 : MonoBehaviour
     Vector2 LightMovement;
     public float PlayerSpeed;
     public float LightSpeed;
-    public float JumpForce;
+    public float DashForce;
     public float DropTimer;
-    public bool IsJumping;
+    private float Direction = 1;
+    public bool IsDashing;
     public bool IsGrounded;
     private bool FacingRight = true;
     private Rigidbody2D RB;
@@ -20,7 +21,7 @@ public class PlayerControllerV2 : MonoBehaviour
     IEnumerator StopJump()
     {
         yield return new WaitForSeconds(DropTimer);
-        IsJumping = false;
+        IsDashing = false;
     }
 
     // Start is called before the first frame update
@@ -33,24 +34,39 @@ public class PlayerControllerV2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RB.velocity = new Vector2(PlayerMovement.x, 0) * PlayerSpeed * Time.deltaTime;
+        //Direction = PlayerMovement;
+        RB.velocity = new Vector2(PlayerMovement.x, PlayerMovement.y) * PlayerSpeed * Time.deltaTime;
         Light.transform.Translate(new Vector2(LightMovement.x, LightMovement.y) * LightSpeed * Time.deltaTime);
 
-        Jump();
+        Dash();
         Flip();
     }
 
-    void Jump()
+    void Dash()
     {
-        if (IsJumping && IsGrounded)
+        if (IsDashing && PlayerMovement.x != 0 || PlayerMovement.y != 0)
         {
-            RB.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+            RB.AddForce(new Vector2(PlayerMovement.normalized.x, PlayerMovement.normalized.y) * DashForce, ForceMode2D.Impulse);
             
             //StartCoroutine(StopJump());
             //transform.Translate(Vector3.up * JumpForce);
-            IsJumping = false;
+            IsDashing = false;
         }
-        
+        else if (IsDashing && !FacingRight && PlayerMovement.x == 0 && PlayerMovement.y == 0)
+        {
+            RB.AddForce(Vector2.left * DashForce, ForceMode2D.Impulse);
+
+            IsDashing = false;
+        }
+        else if (IsDashing && FacingRight && PlayerMovement.x == 0 && PlayerMovement.y == 0)
+        {
+            RB.AddForce(Vector2.right * DashForce, ForceMode2D.Impulse);
+
+            IsDashing = false;
+        }
+
+
+
     }
 
     void AnimatePlayer()
@@ -82,11 +98,11 @@ public class PlayerControllerV2 : MonoBehaviour
         LightMovement = ctx.ReadValue<Vector2>();
     }
 
-    public void OnJump(InputAction.CallbackContext ctx)
+    public void OnDash(InputAction.CallbackContext ctx)
     {
         if (ctx.phase == InputActionPhase.Performed)
         {
-            IsJumping = true;
+            IsDashing = true;
             //RB.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
         }
     }
