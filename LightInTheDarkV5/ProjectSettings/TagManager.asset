@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - Danger
+  - Light
+  - Goal
   layers:
   - Default
   - TransparentFX
@@ -40,4 +44,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Danger
+    uniqueID: 2472514461
+    locked: 0
+  - name: Ground
+    uniqueID: 224323343
+    locked: 0
+  - name: Player
+    uniqueID: 2594383857
+    locked: 0
+  - name: Goal
+    uniqueID: 3916347895
     locked: 0

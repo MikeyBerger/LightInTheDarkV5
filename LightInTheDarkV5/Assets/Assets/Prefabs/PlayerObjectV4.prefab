@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 2625835888664316003}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2625835890121700655}
   m_RootOrder: 0
@@ -67,8 +67,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1700583439
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7460046300004610927, guid: 30506db8cd0bc487bb8ab2415b3345f8,
     type: 3}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!1 &2625835890121700649
 GameObject:
@@ -131,7 +131,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.25225234, y: -0.0059663057}
+  m_Offset: {x: 0.20815301, y: 0.0028535128}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -142,7 +142,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.985168, y: 1.7840478}
+  m_Size: {x: 0.8969693, y: 1.6605694}
   m_EdgeRadius: 0
 --- !u!50 &2625835890121700653
 Rigidbody2D:
@@ -257,7 +257,7 @@ MonoBehaviour:
   LightSpeed: 10
   DashForce: 20000
   LadderSpeed: 0
-  DashTimer: 0.5
+  DashTimer: 0
   DropSpeed: 0
   IsGrounded: 0
   AirBorn: 0
