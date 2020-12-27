@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public float LadderSpeed;
     public float DashTimer;
     public float DropSpeed;
+    public bool IsPaused;
     public bool IsGrounded;
     public bool AirBorn;
     public bool IsDashing;
@@ -21,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private Transform LightObject;
     private Rigidbody2D RB;
     private Animator Anim;
+    public Canvas PauseCanvas;
 
     IEnumerator StopDash()
     {
@@ -36,6 +39,7 @@ public class PlayerController : MonoBehaviour
         RB = GetComponent<Rigidbody2D>();
         LightObject = GameObject.FindGameObjectWithTag("Light").GetComponent<Transform>();
         Anim = GetComponent<Animator>();
+        PauseCanvas.enabled = false;
         
     }
 
@@ -74,6 +78,7 @@ public class PlayerController : MonoBehaviour
         AnimatePlayer();
         //Dash();
         //Drop();
+        Pause();
     }
 
     void Flip()
@@ -140,6 +145,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void Pause()
+    {
+        if (IsPaused)
+        {
+            Time.timeScale = 0;
+        }
+        else if (!IsPaused)
+        {
+            Time.timeScale = 1;
+        }
+    }
+
     #region InputActions
     public void OnMovePlayer(InputAction.CallbackContext ctx)
     {
@@ -158,15 +175,27 @@ public class PlayerController : MonoBehaviour
             IsDashing = true;
         }
     }
+
+    public void OnPause(InputAction.CallbackContext ctx)
+    {
+        if (ctx.phase == InputActionPhase.Performed && !IsPaused)
+        {
+            IsPaused = true;
+
+        }
+        else if (ctx.phase == InputActionPhase.Performed && IsPaused)
+        {
+            IsPaused = false;
+        }
+    }
     #endregion
 
     #region Collisions
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground" || collision.gameObject.name == "GroundTilemap")
+        if (collision.gameObject.tag == "Danger")
         {
-            IsGrounded = true;
-            AirBorn = false;
+            Destroy(gameObject);
         }
     }
 

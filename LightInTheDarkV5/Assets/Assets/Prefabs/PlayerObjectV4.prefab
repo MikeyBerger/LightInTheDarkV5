@@ -68,7 +68,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1700583439
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7460046300004610927, guid: 30506db8cd0bc487bb8ab2415b3345f8,
     type: 3}
@@ -236,6 +236,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: e521910c-545c-4e4d-8c69-5aa0a5bb6fed
     m_ActionName: PlayerMap/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 24a059a1-657d-44d7-9bf0-d5df73025482
+    m_ActionName: PlayerMap/Pause[/Keyboard/p]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerMap
@@ -259,10 +263,12 @@ MonoBehaviour:
   LadderSpeed: 0
   DashTimer: 0
   DropSpeed: 0
+  IsPaused: 0
   IsGrounded: 0
   AirBorn: 0
   IsDashing: 0
   FacingRight: 1
+  PauseCanvas: {fileID: 0}
 --- !u!95 &2625835890121700648
 Animator:
   serializedVersion: 3

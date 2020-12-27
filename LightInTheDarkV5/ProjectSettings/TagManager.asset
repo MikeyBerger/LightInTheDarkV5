@@ -8,6 +8,10 @@ TagManager:
   - Danger
   - Light
   - Goal
+  - Up
+  - Down
+  - YellowPortal
+  - OrangePortal
   layers:
   - Default
   - TransparentFX
