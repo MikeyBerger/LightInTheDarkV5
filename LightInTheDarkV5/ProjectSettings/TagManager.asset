@@ -12,6 +12,9 @@ TagManager:
   - Down
   - YellowPortal
   - OrangePortal
+  - Ladder
+  - RedPortal
+  - GreenPortal
   layers:
   - Default
   - TransparentFX
