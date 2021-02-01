@@ -36,7 +36,7 @@ public class Portal2 : MonoBehaviour
     {
         IsOrange = true;
 
-        if (/*Vector2.Distance(transform.position, collision.transform.position) > Distance*/ IsOrange)
+        if (Vector2.Distance(transform.position, collision.transform.position) > Distance /*IsOrange*/)
         {
             collision.transform.position = new Vector2(Destination.position.x, Destination.position.y);
         }
