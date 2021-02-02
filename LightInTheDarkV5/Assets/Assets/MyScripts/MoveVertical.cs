@@ -34,4 +34,19 @@ public class MoveVertical : MonoBehaviour
             RB.velocity = new Vector2(0, Speed) * -1;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Up")
+        {
+            //transform.Translate(0, Speed, 0);
+            RB.velocity = new Vector2(0, Speed);
+        }
+
+        if (collision.gameObject.tag == "Down")
+        {
+            //transform.Translate(0, Speed * -1, 0);
+            RB.velocity = new Vector2(0, Speed) * -1;
+        }
+    }
 }
