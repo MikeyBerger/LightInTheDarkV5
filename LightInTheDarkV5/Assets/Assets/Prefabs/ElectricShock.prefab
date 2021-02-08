@@ -173,6 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8961174864161620559}
   - component: {fileID: 6099905502560283468}
+  - component: {fileID: 9019811922498330964}
   m_Layer: 0
   m_Name: ElectricShock
   m_TagString: Danger
@@ -241,3 +242,15 @@ PolygonCollider2D:
       - {x: 0.0925926, y: 0.57260215}
       - {x: -0.09082685, y: 0.5712908}
       - {x: -0.07, y: -0.044999998}
+--- !u!114 &9019811922498330964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7431127561906019715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f804bf5763c634b27b91b9921d7e35bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
