@@ -333,6 +333,7 @@ GameObject:
   - component: {fileID: 575825849}
   - component: {fileID: 575825848}
   - component: {fileID: 575825847}
+  - component: {fileID: 575825850}
   m_Layer: 0
   m_Name: DangerTilemap1
   m_TagString: Danger
@@ -551,6 +552,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &575825850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575825845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f804bf5763c634b27b91b9921d7e35bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &779307348
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +576,7 @@ GameObject:
   - component: {fileID: 779307352}
   - component: {fileID: 779307351}
   - component: {fileID: 779307350}
+  - component: {fileID: 779307353}
   m_Layer: 0
   m_Name: DangerTileMap2
   m_TagString: Untagged
@@ -799,6 +813,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &779307353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779307348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f804bf5763c634b27b91b9921d7e35bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1248675273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,6 +1530,7 @@ GameObject:
   - component: {fileID: 1392165859}
   - component: {fileID: 1392165858}
   - component: {fileID: 1392165860}
+  - component: {fileID: 1392165861}
   m_Layer: 0
   m_Name: DangerTileMap3
   m_TagString: Ladder
@@ -1780,6 +1807,18 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0.15}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &1392165861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392165856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f804bf5763c634b27b91b9921d7e35bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1471780292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1935,6 +1974,7 @@ GameObject:
   - component: {fileID: 1875929689}
   - component: {fileID: 1875929688}
   - component: {fileID: 1875929687}
+  - component: {fileID: 1875929690}
   m_Layer: 0
   m_Name: DangerTilemap4
   m_TagString: Untagged
@@ -2189,6 +2229,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1875929690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875929685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f804bf5763c634b27b91b9921d7e35bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1988199876
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 221493907601414818}
   - component: {fileID: 5995178010448856005}
+  - component: {fileID: -8756458631571595308}
   m_Layer: 0
   m_Name: ExplosionV2
   m_TagString: Danger
@@ -63,6 +64,20 @@ PolygonCollider2D:
       - {x: -1.1225854, y: -0.5879308}
       - {x: 0.65491164, y: -0.13896298}
       - {x: 0.84198177, y: 0.1389631}
+--- !u!114 &-8756458631571595308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760399083836032366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348b00e032eda48149cb362377f03692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinSize: 1.5
+  MaxSize: 1
 --- !u!1 &4824527175339612555
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,8 +145,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -378619401
-  m_SortingLayer: 4
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 073430cb513c44e9889b81fb66e1e842, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
