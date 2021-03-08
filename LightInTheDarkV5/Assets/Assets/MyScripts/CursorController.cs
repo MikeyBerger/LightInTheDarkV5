@@ -11,6 +11,12 @@ public class CursorController : MonoBehaviour
     public bool IsPressed;
     private Rigidbody2D RB;
 
+    IEnumerator StopPress()
+    {
+        yield return new WaitForSeconds(1f);
+        IsPressed = false;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +27,11 @@ public class CursorController : MonoBehaviour
     void Update()
     {
         RB.velocity = new Vector2(Movement.x, Movement.y) * Speed * Time.deltaTime;
+
+        if (IsPressed)
+        {
+            StartCoroutine(StopPress());
+        }
     }
 
     public void OnMove(InputAction.CallbackContext ctx)
