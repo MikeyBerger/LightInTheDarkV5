@@ -19,13 +19,14 @@ public class DeletePlayerPrefsV2 : MonoBehaviour
         
     }
 
+    /*
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (CC.IsPressed && collision.gameObject.tag == "Cursor")
         {
             PlayerPrefs.DeleteAll();
         }
-    }
+    */
 
     private void OnTriggerStay2D(Collider2D collision)
     {
