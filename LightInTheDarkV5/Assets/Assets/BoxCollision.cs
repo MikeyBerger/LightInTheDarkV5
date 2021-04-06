@@ -33,6 +33,7 @@ public class BoxCollision : MonoBehaviour
         if (collision.gameObject.tag == "Cursor" && CC.IsPressed)
         {
             HasCollided = true;
+            SM.ChangeScene(Index);
         }
     }
 

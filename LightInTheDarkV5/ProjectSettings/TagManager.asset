@@ -17,6 +17,9 @@ TagManager:
   - GreenPortal
   - Cursor
   - FinalGoal
+  - Quit
+  - Play
+  - Options
   layers:
   - Default
   - TransparentFX
@@ -53,6 +56,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 2693851795
     locked: 0
   - name: Danger
     uniqueID: 2472514461
