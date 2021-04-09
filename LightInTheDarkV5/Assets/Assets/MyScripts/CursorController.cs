@@ -74,4 +74,22 @@ public class CursorController : MonoBehaviour
 
 
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (IsPressed && collision.gameObject.tag == "Play")
+        {
+            SceneManager.LoadScene(1);
+        }
+        else if (IsPressed && collision.gameObject.tag == "Options")
+        {
+            //SceneManager.LoadScene(1); Come up with an option menu
+            SceneManager.LoadScene("Options");
+        }
+        else if (IsPressed && collision.gameObject.tag == "Quit")
+        {
+
+            Application.Quit();
+        }
+    }
 }

@@ -3180,6 +3180,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrangePortal
       objectReference: {fileID: 0}
+    - target: {fileID: 1152619830068398718, guid: c7df76762b77142d7a12aa0e95e24efc,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1601115501
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152619830068398718, guid: c7df76762b77142d7a12aa0e95e24efc,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1152619830068398719, guid: c7df76762b77142d7a12aa0e95e24efc,
         type: 3}
       propertyPath: m_LocalPosition.x

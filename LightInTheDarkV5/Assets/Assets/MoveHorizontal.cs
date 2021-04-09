@@ -44,4 +44,17 @@ public class MoveHorizontal : MonoBehaviour
             RB.velocity = new Vector2(Speed, 0) * -1;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Up")
+        {
+            RB.velocity = new Vector2(Speed, 0);
+        }
+
+        if (collision.gameObject.tag == "Down")
+        {
+            RB.velocity = new Vector2(Speed, 0) * -1;
+        }
+    }
 }
