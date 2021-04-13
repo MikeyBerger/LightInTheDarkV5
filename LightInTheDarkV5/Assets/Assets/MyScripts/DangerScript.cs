@@ -26,6 +26,9 @@ public class DangerScript : MonoBehaviour
             Destroy(collision.gameObject);
             //Add Some kind of death VFX and SFX
             SceneManager.LoadScene(ThisScene);
+            
         }
     }
+
+    
 }

@@ -39,11 +39,17 @@ public class MoveToNextLevelV2 : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+
+
+    }
+
     public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-            if (SceneManager.GetActiveScene().buildIndex == 10) /* < Change this int value to whatever your
+            if (SceneManager.GetActiveScene().buildIndex == 11) /* < Change this int value to whatever your
                 //Scene index may change in the future             last level build index is on your
                                                                    build settings */
             {
