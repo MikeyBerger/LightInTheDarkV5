@@ -667,8 +667,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12674}
     - Class: 114
-      Script: {instanceID: 12724}
-    - Class: 114
       Script: {instanceID: 13096}
     - Class: 114
       Script: {instanceID: 13180}
@@ -2237,4 +2235,4 @@ ScriptsOnlyBuild:
   - Assets/Assets/Scenes/RealLevel10.unity
   - Assets/Assets/Options.unity
   - Assets/Assets/Scenes/WinScreen.unity
-  playerPath: /Users/mikescomputer/Desktop/GitHubs/LightInTheDarkV5/LightInTheDarkV5/Final_Build.app
+  playerPath: /Users/mikescomputer/Desktop/GitHubs/LightInTheDarkV5/LightInTheDarkV5/Real_Final_Build.app
