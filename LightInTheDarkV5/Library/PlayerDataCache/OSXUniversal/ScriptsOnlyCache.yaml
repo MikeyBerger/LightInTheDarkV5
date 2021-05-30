@@ -2235,4 +2235,5 @@ ScriptsOnlyBuild:
   - Assets/Assets/Scenes/RealLevel10.unity
   - Assets/Assets/Options.unity
   - Assets/Assets/Scenes/WinScreen.unity
-  playerPath: /Users/mikescomputer/Desktop/GitHubs/LightInTheDarkV5/LightInTheDarkV5/Real_Final_Build.app
+  playerPath: /Users/mikescomputer/Desktop/GitHubs/LightInTheDarkV5/LightInTheDarkV5/Real_Final_Build
+    (For real).app
