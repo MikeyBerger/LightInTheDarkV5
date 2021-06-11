@@ -208,7 +208,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 28
+  controlID: 112
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 69
+  controlID: 113
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1223,7 +1223,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5afbffff
+      m_ExpandedIDs: 6ae0ffff7ee0ffffb4e1ffffd0e1ffff6ae2fffff4e2ffff9ee3ffff42e4ffff2ee5ffff68e5ffff6ee5ffffa8e5ffffe2e5ffff1ce6ffff3ae6ffff7ae6ffffdcf9ffff28faffff5afbffffba410000dc410000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1283,9 +1283,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.005513, y: -0.97515965, z: -12.4140625}
+    m_Target: {x: -1.1551486, y: 2.6088042, z: -13.20117}
     speed: 2
-    m_Value: {x: 3.005513, y: -0.97515965, z: -12.4140625}
+    m_Value: {x: -1.1105607, y: 2.5854137, z: -13.197367}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1335,9 +1335,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.5089126
+    m_Target: 6.4299407
     speed: 2
-    m_Value: 7.5089126
+    m_Value: 6.334917
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1401,20 +1401,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Assets
+    - Assets/Assets/kenney_platformerpack_industrial/PNG/Default size
   m_ViewMode: 1
   m_StartGridSize: 54
   m_LastFolders:
-  - Assets/Assets
+  - Assets/Assets/kenney_platformerpack_industrial/PNG/Default size
   m_LastFoldersGridSize: 54
   m_LastProjectPath: /Users/mikescomputer/Desktop/GitHubs/LightInTheDarkV5/LightInTheDarkV5
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 87}
-    m_SelectedIDs: 7e3e0000
-    m_LastClickedID: 15998
-    m_ExpandedIDs: 000000007c3e00007e3e000000ca9a3b
+    m_SelectedIDs: a2440000
+    m_LastClickedID: 17570
+    m_ExpandedIDs: 000000007c3e00007e3e00009a3e0000a044000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1469,7 +1469,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000be7b0000d26f0000a2780000e0d90000da4300002e4b0000dc4c0000e04c00003c400000585b00005c5b0000a26a0000185f0000b83b0000605800006a4500003467000014620000043d00007a3b0000765500007a5500000651000018470000183c00007c400000c43c0000ee5e0000206a0000fa87000090460000167e000022450000a847000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1494,7 +1494,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 113}
+    m_ScrollPosition: {x: 0, y: 494}
     m_GridSize: 54
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 182

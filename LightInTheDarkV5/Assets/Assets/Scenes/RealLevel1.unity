@@ -470,7 +470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &240244273
 RectTransform:
   m_ObjectHideFlags: 0
@@ -522,7 +522,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' Don''t bump into anything dangerous, and have fun!'
+  m_Text: If you bump into anything dangerous, the level will restart, so look before
+    you leap!
 --- !u!222 &240244275
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2055,7 +2056,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &402676539
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2311,7 +2312,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &576824695
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4079,7 +4080,7 @@ PrefabInstance:
     - target: {fileID: 1578588439820646956, guid: 8be77ac7da12c406b9d70788814a4a65,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8be77ac7da12c406b9d70788814a4a65, type: 3}
