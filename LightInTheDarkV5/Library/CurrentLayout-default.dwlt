@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -138,7 +138,7 @@ MonoBehaviour:
     y: 0
     width: 1440
     height: 762
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -205,10 +205,10 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 712
-  m_MinSize: {x: 709, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 707, y: 492}
+  m_MaxSize: {x: 18002, y: 14042}
   vertical: 0
-  controlID: 112
+  controlID: 88
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,8 +228,8 @@ MonoBehaviour:
     y: 0
     width: 210
     height: 712
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 113
+  controlID: 89
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -340,8 +340,8 @@ MonoBehaviour:
     y: 0
     width: 276
     height: 712
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 27}
   m_Panes:
   - {fileID: 27}
@@ -1151,8 +1151,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -476
     m_HBaseRangeMax: 476
-    m_VBaseRangeMin: -206.5
-    m_VBaseRangeMax: 206.5
+    m_VBaseRangeMin: -196
+    m_VBaseRangeMax: 196
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1169,11 +1169,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 21
       width: 952
-      height: 413
+      height: 392
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 476, y: 206.5}
+    m_Translation: {x: 476, y: 196}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1181,9 +1181,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -476
-      y: -206.5
+      y: -196
       width: 952
-      height: 413
+      height: 392
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 952, y: 413}
@@ -1223,7 +1223,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6ae0ffff7ee0ffffb4e1ffffd0e1ffff6ae2fffff4e2ffff9ee3ffff42e4ffff2ee5ffff68e5ffff6ee5ffffa8e5ffffe2e5ffff1ce6ffff3ae6ffff7ae6ffffdcf9ffff28faffff5afbffffba410000dc410000
+      m_ExpandedIDs: 94e3ffffa8e3ffffdce4fffff8e4ffff92e5ffff1ce6ffffc6e6ffff6ae7ffff56e8ffff90e8fffff2e8ffff2ce9ffff66e9ffff6ee9ffff8ce9ffffcce9ffff2ef9ffff5afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1283,9 +1283,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.1551486, y: 2.6088042, z: -13.20117}
+    m_Target: {x: 2.1832814, y: -1.5616912, z: -13.349609}
     speed: 2
-    m_Value: {x: -1.1105607, y: 2.5854137, z: -13.197367}
+    m_Value: {x: 2.1832814, y: -1.5616912, z: -13.349609}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1335,9 +1335,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.4299407
+    m_Target: 9.504147
     speed: 2
-    m_Value: 6.334917
+    m_Value: 9.504147
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1401,20 +1401,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Assets/kenney_platformerpack_industrial/PNG/Default size
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 54
   m_LastFolders:
-  - Assets/Assets/kenney_platformerpack_industrial/PNG/Default size
+  - Assets
   m_LastFoldersGridSize: 54
   m_LastProjectPath: /Users/mikescomputer/Desktop/GitHubs/LightInTheDarkV5/LightInTheDarkV5
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 87}
-    m_SelectedIDs: a2440000
-    m_LastClickedID: 17570
-    m_ExpandedIDs: 000000007c3e00007e3e00009a3e0000a044000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 883f0000
+    m_LastClickedID: 16264
+    m_ExpandedIDs: 00000000883f00008a3f0000b03f0000b23f0000b43f0000cc3f0000be430000b047000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1442,7 +1442,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007c3e00007e3e0000
+    m_ExpandedIDs: 00000000883f00008a3f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1470,7 +1470,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000be7b0000d26f0000a2780000e0d90000da4300002e4b0000dc4c0000e04c00003c400000585b00005c5b0000a26a0000185f0000b83b0000605800006a4500003467000014620000043d00007a3b0000765500007a5500000651000018470000183c00007c400000c43c0000ee5e0000206a0000fa87000090460000167e000022450000a847000000000000
+    m_ExpandedInstanceIDs: c6230000be7b0000d26f0000a2780000e0d90000da4300002e4b0000dc4c0000e04c00003c400000585b00005c5b0000a26a0000185f0000b83b0000605800003467000014620000043d00007a3b0000765500007a5500000651000018470000183c00007c400000c43c0000ee5e0000206a0000fa87000090460000167e000022450000a847000000000000f64a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1494,7 +1494,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 494}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 54
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 182
@@ -1535,4 +1535,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 219
+  m_LastVerticalScrollValue: 0

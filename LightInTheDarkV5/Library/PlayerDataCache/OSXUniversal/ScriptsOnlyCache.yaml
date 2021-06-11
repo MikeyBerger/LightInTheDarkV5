@@ -1597,12 +1597,6 @@ ScriptsOnlyBuild:
     className: PlayerInput
   - hash:
       serializedVersion: 2
-      Hash: f1277091a14d2ff83a944e0bd39394ee
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MoveToNextLevel
-  - hash:
-      serializedVersion: 2
       Hash: 6be939d6f0aad748aa63a8815400aaa2
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
@@ -2236,4 +2230,4 @@ ScriptsOnlyBuild:
   - Assets/Assets/Options.unity
   - Assets/Assets/Scenes/WinScreen.unity
   playerPath: /Users/mikescomputer/Desktop/GitHubs/LightInTheDarkV5/LightInTheDarkV5/Real_Final_Build
-    (For real).app
+    (Besides format).app
