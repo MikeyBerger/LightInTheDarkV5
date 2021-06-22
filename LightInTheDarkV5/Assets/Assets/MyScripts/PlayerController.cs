@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -39,7 +40,7 @@ public class PlayerController : MonoBehaviour
         RB = GetComponent<Rigidbody2D>();
         LightObject = GameObject.FindGameObjectWithTag("Light").GetComponent<Transform>();
         Anim = GetComponent<Animator>();
-        PauseCanvas.enabled = false;
+        //PauseCanvas.enabled = false;
         
     }
 
@@ -150,10 +151,13 @@ public class PlayerController : MonoBehaviour
         if (IsPaused)
         {
             Time.timeScale = 0;
+            PauseCanvas.enabled = true;
+
         }
         else if (!IsPaused)
         {
             Time.timeScale = 1;
+            PauseCanvas.enabled = false;
         }
     }
 
@@ -186,6 +190,15 @@ public class PlayerController : MonoBehaviour
         else if (ctx.phase == InputActionPhase.Performed && IsPaused)
         {
             IsPaused = false;
+        }
+    }
+
+    public void OnReturnToMenu(InputAction.CallbackContext ctx)
+    {
+        if (IsPaused && ctx.phase == InputActionPhase.Performed)
+        {
+            SceneManager.LoadScene(0);
+            
         }
     }
     #endregion

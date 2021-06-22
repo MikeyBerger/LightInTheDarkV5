@@ -68,7 +68,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1700583439
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7460046300004610927, guid: 30506db8cd0bc487bb8ab2415b3345f8,
     type: 3}
@@ -251,6 +251,21 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 24a059a1-657d-44d7-9bf0-d5df73025482
     m_ActionName: PlayerMap/Pause[/Keyboard/p]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2625835890121700651}
+        m_MethodName: OnReturnToMenu
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: aa15896b-55b5-4601-8b42-1350464b7527
+    m_ActionName: PlayerMap/ReturnToMenu[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerMap
